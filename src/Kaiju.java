@@ -7,6 +7,9 @@ public class Kaiju extends Monster{
         this.health = health;
     }
 
+    /**
+     * @return 0
+     */
     @Override
     double areaOfDestruction() {
         return 0;

@@ -1,14 +1,16 @@
 public class WalkingEye extends Robot{
-    private int power;
+    private int power = 10;
 
     public WalkingEye(int x, int y) {
         super(x, y);
-        power = 10;
     }
 
+    /**
+     * @return 0
+     */
     @Override
     double areaOfDestruction() {
-        return 0;
+        return super.areaOfDestruction()*power;
     }
 
 }
