@@ -1,3 +1,13 @@
+
+/**
+ * @author  Burmau Garba
+ * @version 1.1
+ * <br/>
+ * Created on 01/09/2021
+ * <br/>
+ *<b> Instructor<b/>: Brian Sauer
+ * */
+
 public class Kaiju extends Monster{
     private int x,y,health;
 
@@ -8,6 +18,9 @@ public class Kaiju extends Monster{
     }
 
     /**
+     * This just returns the area in which the destruction by the
+     * Kaiju
+     *
      * @return 0
      */
     @Override

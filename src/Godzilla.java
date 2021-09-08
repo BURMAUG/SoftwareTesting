@@ -1,3 +1,12 @@
+
+/**
+ * @author  Burmau Garba
+ * @version 1.1
+ * <br/>
+ * Created on 01/09/2021
+ * <br/>
+ *<b> Instructor<b/>: Brian Sauer
+ * */
 public class Godzilla extends Kaiju {
     private int tailLength;
 
@@ -13,7 +22,7 @@ public class Godzilla extends Kaiju {
     }
 
     /**
-     * @return 0
+     * @return 0 for the area of destruction of Godzilla
      */
     @Override
     double areaOfDestruction() {

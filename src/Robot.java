@@ -1,26 +1,53 @@
+
+/**
+ * @author  Burmau Garba
+ * @version 1.1
+ * <br/>
+ * Created on 01/09/2021
+ * <br/>
+ *<b> Instructor<b/>: Brian Sauer
+ * */
 public class Robot extends Monster{
-    private int x,y,z, power;
+    public int x,y, power;
     /**
-     * @param x
-     * @param y
-     * @param z
+     * @param x is the x-axis
+     * @param y is the y-axis
      * @param power
      */
-    public Robot(int x, int y, int z, int power) {
+    public Robot(int x, int y,  int power) {
+        this(x,y);
         this.x = x;
         this.y = y;
-        this.z = z;
         this.power = power;
     }
 
-    /**
-     * @param x
-     * @param y
-     */
     public Robot(int x, int y) {
-        this.x = x;
-        this.y = y;
+        super();
     }
+
+//    public int getX() {
+//        return x;
+//    }
+//
+//    public void setX(int x) {
+//        this.x = x;
+//    }
+//
+//    public int getY() {
+//        return y;
+//    }
+//
+//    public void setY(int y) {
+//        this.y = y;
+//    }
+//
+//    public int getPower() {
+//        return power;
+//    }
+//
+//    public void setPower(int power) {
+//        this.power = power;
+//    }
 
     /**
      * @return the area for which the destruction is allowed
@@ -28,8 +55,7 @@ public class Robot extends Monster{
      */
     @Override
     double areaOfDestruction() {
-        return Math.pow(power, power);
+        return 0;
     }
-
 
 }
